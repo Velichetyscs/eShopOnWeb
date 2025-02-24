@@ -27,6 +27,8 @@ builder.Logging.AddConsole();
 
 // My first change
 // My second change
+// My third change
+
 if (builder.Environment.IsDevelopment() || builder.Environment.EnvironmentName == "Docker")
 {
     // Configure SQL Server (local)
