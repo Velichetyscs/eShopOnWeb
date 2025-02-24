@@ -25,6 +25,7 @@ using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 builder.Logging.AddConsole();
 
+// My first change
 if (builder.Environment.IsDevelopment() || builder.Environment.EnvironmentName == "Docker")
 {
     // Configure SQL Server (local)
