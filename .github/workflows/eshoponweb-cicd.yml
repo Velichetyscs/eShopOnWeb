@@ -9,13 +9,13 @@ env:
   LOCATION: eastus
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: c246f10a-8adb-4040-b9c1-413f785aff59
-  WEBAPP-NAME: eshoponweb-webapp-SV
+  WEBAPP-NAME: eshoponwebappsv
 
 
 jobs:
   #Build, test and publish .net web project in repository
   buildandtest:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     #checkout the repository
     - uses: actions/checkout@v4
